@@ -7,12 +7,20 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { PlayComponent } from './play/play.component';
+import { StatsComponent } from './stats/stats.component';
+import { HelpComponent } from './help/help.component';
+import { SettingsComponent } from './settings/settings.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    PlayComponent,
+    StatsComponent,
+    HelpComponent,
+    SettingsComponent
   ],
   imports: [
     BrowserModule,
