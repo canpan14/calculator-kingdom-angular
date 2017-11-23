@@ -19,9 +19,13 @@ export class HomeComponent implements OnInit {
 
   signOut () {
   	this.authService.signOut()
-  		.subscribe(() => {
-  			this.router.navigate(["/"]);
-  		})
+  		.subscribe(
+  			response => {
+          this.authService.resetUserToken()
+          this.router.navigate(["/"])
+        },
+        err => console.log(err)
+  		)
   }
 
 }

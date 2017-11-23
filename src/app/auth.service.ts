@@ -12,6 +12,14 @@ export class AuthService {
     return this.user.token
   }
 
+  resetUserToken() {
+    this.user.token = null
+  }
+
+  isAuthorized() {
+    return this.user.token !== null && this.user.token !== undefined
+  }
+
 	signIn(credentials) {
 		return this.http.post(`${this.baseUrl}/sign-in`, {credentials: credentials });
 	}
