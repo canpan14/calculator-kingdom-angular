@@ -6,10 +6,13 @@ import { PlayComponent } from './play/play.component';
 import { StatsComponent } from './stats/stats.component';
 import { HelpComponent } from './help/help.component';
 import { SettingsComponent } from './settings/settings.component';
+import { SignInComponent } from './sign-in/sign-in.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { ChangePasswordComponent } from './change-password/change-password.component';
 
 const routes: Routes = [
     {
-      path: '',
+      path: 'home',
       component: HomeComponent
     },
     {
@@ -27,6 +30,18 @@ const routes: Routes = [
     {
       path: 'settings',
       component: SettingsComponent
+    },
+    {
+      path: '',
+      component: SignInComponent
+    },
+    {
+      path: 'sign-up',
+      component: SignUpComponent
+    },
+    {
+      path: 'change-password',
+      component: ChangePasswordComponent
     }
 ];
 
